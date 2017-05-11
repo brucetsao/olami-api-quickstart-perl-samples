@@ -10,15 +10,13 @@ The audio file is required in WAV file format PCM, **mono** recording with a sam
 
 ## Perl modules
 
-Perl module is in your @INC include, You may also need to install some modules by the following steps (example by yum in bash):  
+Perl module is in your @INC include, You may also need to install some modules by the following steps (example in bash):  
 
 ```
-yum install -y perl-Time-HiRes
-
 yum install -y perl-CPAN*
+perl -MCPAN -e 'install Time::HiRes'
 perl -MCPAN -e 'install Math::Round'
-
-yum install -y perl-IO-Socket-SSL-*
+perl -MCPAN -e 'install IO::Socket::SSL'
 ```
 
 ## Run the application:
