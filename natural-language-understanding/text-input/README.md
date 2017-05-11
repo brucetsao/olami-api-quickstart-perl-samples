@@ -9,12 +9,10 @@ OLAMI website and documentation: [http://olami.ai](http://olami.ai)
 Perl module is in your @INC include, You may also need to install some modules by the following steps (example by yum in bash):  
 
 ```
-yum install -y perl-Time-HiRes
-
 yum install -y perl-CPAN*
+perl -MCPAN -e 'install Time::HiRes'
 perl -MCPAN -e 'install Math::Round'
-
-yum install -y perl-IO-Socket-SSL-*
+perl -MCPAN -e 'install IO::Socket::SSL'
 ```
 
 ## Run the application (by Python 3):
