@@ -178,7 +178,7 @@ sub get_headers_field {
 sub getRecognitionResult {
 	my ( $api, $seq ) = @_;
 
-	my $postData = getBasicQueryString( $api, $seq );
+	my $postData = getBasicQueryString( $api, $seq ) . "&stop=1";
 
 	# Request speech recognition service by HTTP GET
 	my $ua  = LWP::UserAgent->new;
