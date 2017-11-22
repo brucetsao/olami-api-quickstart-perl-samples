@@ -82,6 +82,7 @@ sub getBasicQueryString {
 	# Assemble all the HTTP parameters you want to send
 	my $postData = "api="
 	  . $api
+	  . "&_from=perl"
 	  . "&appkey="
 	  . $appKey
 	  . "&timestamp="
