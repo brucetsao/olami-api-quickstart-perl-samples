@@ -83,6 +83,7 @@ sub getRecognitionResult {
 
 	# Assemble all the HTTP parameters you want to send
 	my %array_postData;
+	$array_postData{'_from'}     = 'perl';
 	$array_postData{'api'}       = $api;
 	$array_postData{'appkey'}    = $appKey;
 	$array_postData{'timestamp'} = $timestamp;
